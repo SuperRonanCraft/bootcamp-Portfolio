@@ -9,17 +9,18 @@
       <h1 id="title">Alain Nunez</h1>
       <nav>
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact Me</a></li>
-          <li><a href="#">Resume</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#resume">Resume</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <h2>About Me</h2>
-        <div class="box">
+      <!-- First Box -->
+      <section id="about-me" class="container">
+        <h2 class="title-about">About Me</h2>
+        <div class="text">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
             blanditiis adipisci aperiam ducimus beatae. Earum quasi non mollitia
@@ -28,18 +29,44 @@
           </p>
         </div>
       </section>
-      <section>
-        <h2>Work</h2>
-        <div class="box">
-          <h2 class="box-title">Work1</h2>
-          <p class="box-desc">Work Description</p>
-          <a href="assets/tech.png"></a>
-        </div>
-        <div class="box">
-          <h2 class="box-title">Work2</h2>
-          <p class="box-desc">Work Description</p>
-          <a href="assets/tech.png"></a>
-        </div>
+      <!-- Second Box -->
+      <section id="work" class="container">
+        <h2 class="title-about">Work</h2>
+        <section class="box-container">
+          <div class="item-large">
+            <h2 class="box-title">Work1</h2>
+            <p class="box-desc">Work Description</p>
+            <!-- <img src="assets/tech.png" alt="Technology!" /> -->
+          </div>
+          <div class="item">
+            <h2 class="box-title">Work2</h2>
+            <p class="box-desc">Work Description</p>
+            <!-- <img src="assets/tech.png" alt="Technology!" /> -->
+          </div>
+          <div class="item">
+            <h2 class="box-title">Work3</h2>
+            <p class="box-desc">Work Description</p>
+            <!-- <img src="assets/tech.png" alt="Technology!" /> -->
+          </div>
+        </section>
+      </section>
+      <section id="contact" class="container">
+        <h2 class="title-about">Contact</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+          aperiam aliquid voluptate eveniet commodi praesentium eum cumque, nisi
+          quibusdam, libero est sunt fugiat accusantium consequatur rem
+          asperiores illum quae nostrum?
+        </p>
+      </section>
+      <section id="resume" class="container">
+        <h2 class="title-about">Resume</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus at,
+          accusantium ab doloremque quidem fugit quam corrupti in, fugiat
+          consequatur voluptatibus sed? Et quas est eius necessitatibus quasi
+          eos voluptates.
+        </p>
       </section>
     </main>
   </body>

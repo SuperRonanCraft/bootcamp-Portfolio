@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  /* border: 1px solid red; */
+  border: 1px solid red;
+  margin: 3px;
 }
 
 :root {
@@ -16,6 +17,42 @@ h1 {
 h2 {
   font-size: 180%;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 4;
+  align-self: center;
+  justify-content: space-around;
+}
+
+.item {
+  flex-grow: 1;
+}
+
+.item-large {
+  flex: 0 0 100%;
+}
+
+.title-about {
+  flex-grow: 1;
+  padding-right: 20px;
+  border-right: solid 3px blue;
+}
+
+.container .text {
+  text-align: center;
+  width: 80%;
+}
+
+/* Nav Bar */
 header {
   display: flex;
   justify-content: flex-end;
@@ -37,11 +74,11 @@ header a {
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
   color: var(--link-color);
-  transition: all 0.4s ease-in-out;
 }
 
 header a:hover {
   color: var(--link-color-hover);
+  transition: all 0.4s ease-in-out;
 }
 
 #title {
