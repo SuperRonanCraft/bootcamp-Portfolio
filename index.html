@@ -52,12 +52,26 @@
       </section>
       <section id="contact" class="container">
         <h2 class="title-about">Contact</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-          aperiam aliquid voluptate eveniet commodi praesentium eum cumque, nisi
-          quibusdam, libero est sunt fugiat accusantium consequatur rem
-          asperiores illum quae nostrum?
-        </p>
+        <div class="box-container">
+          <button
+            class="tooltip"
+            onclick="myFunction(`(786)216-8290`, `mytooltip1`)"
+            onmouseout="outFunc(`mytooltip1`, `(786)216-8290`)"
+          >
+            Phone
+            <span class="tooltiptext" id="mytooltip1">(786)216-8290</span>
+          </button>
+          <button
+            class="tooltip"
+            onclick="myFunction(`alain.nunez55@gmail.com`, `mytooltip2`)"
+            onmouseout="outFunc(`mytooltip2`, `alain.nunez55@gmail.com`)"
+          >
+            Email
+            <span class="tooltiptext" id="mytooltip2"
+              >alain.nunez55@gmail.com</span
+            >
+          </button>
+        </div>
       </section>
       <section id="resume" class="container">
         <h2 class="title-about">Resume</h2>
@@ -70,4 +84,19 @@
       </section>
     </main>
   </body>
+  <script>
+    function myFunction(copyText, tooltipid) {
+      //copyText.select();
+      //copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText);
+
+      var tooltip = document.getElementById(tooltipid);
+      tooltip.innerHTML = "Copied: " + copyText;
+    }
+
+    function outFunc(tooltipid, text) {
+      var tooltip = document.getElementById(tooltipid);
+      tooltip.innerHTML = text;
+    }
+  </script>
 </html>
