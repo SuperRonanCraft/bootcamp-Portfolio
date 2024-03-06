@@ -16,11 +16,14 @@
         </ul>
       </nav>
     </header>
-    <img src="assets/tech2.jpg" alt="Technology!" />
+    <section id="profile">
+      <h2>My Portfolio</h2>
+      <img id="profile-img" src="assets/profile.jpg" alt="Profile Picture" />
+    </section>
     <main>
       <!-- First Box -->
       <section id="about-me" class="container">
-        <h2 class="title-about">About Me</h2>
+        <h3 class="titles">About Me</h3>
         <div class="text">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -28,54 +31,72 @@
             officia deleniti impedit numquam sequi quisquam quaerat! Recusandae
             eos sit non consequatur.
           </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+            ullam quas fugit eum! Odio reprehenderit unde, perferendis libero
+            expedita dolorem fugit laboriosam temporibus quis, soluta laborum
+            vel. Culpa, eius iusto!
+          </p>
         </div>
       </section>
       <!-- Second Box -->
       <section id="work" class="container">
-        <h2 class="title-about">Work</h2>
+        <h3 class="titles">Work</h3>
         <section class="box-container">
-          <div class="item-large">
-            <h2 class="box-title">Work1</h2>
-            <p class="box-desc">Work Description</p>
-            <img src="assets/tech.png" alt="Technology!" />
+          <div class="item item-large">
+            <a href="http://google.com">
+              <img src="assets/purplething.png" alt="Web Design" />
+            </a>
+            <div class="box-thing">
+              <h4 class="box-title">Work</h4>
+              <p class="box-desc">Work Description</p>
+            </div>
           </div>
           <div class="item">
-            <h2 class="box-title">Work2</h2>
-            <p class="box-desc">Work Description</p>
-            <img src="assets/tech.png" alt="Technology!" />
+            <a href="http://google.com">
+              <img src="assets/purplething.png" alt="Technology!" />
+            </a>
+            <div class="box-thing">
+              <h4 class="box-title">Work2</h4>
+              <p class="box-desc">Work Description</p>
+            </div>
           </div>
           <div class="item">
-            <h2 class="box-title">Work3</h2>
-            <p class="box-desc">Work Description</p>
-            <img src="assets/tech.png" alt="Technology!" />
+            <a href="http://google.com">
+              <img src="assets/purplething.png" alt="Technology!" />
+            </a>
+            <div class="box-thing">
+              <h4 class="box-title">Work3</h4>
+              <p class="box-desc">Work Description</p>
+            </div>
           </div>
         </section>
       </section>
       <section id="contact" class="container">
-        <h2 class="title-about">Contact</h2>
+        <h3 class="titles">Contact</h3>
         <div class="box-container">
           <button
             class="tooltip"
             onclick="myFunction(`(786)216-8290`, `mytooltip1`)"
-            onmouseout="outFunc(`mytooltip1`, `(786)216-8290`)"
+            onmouseout="outFunc(`mytooltip1`, `Click to Copy`)"
           >
-            Phone
-            <span class="tooltiptext" id="mytooltip1">(786)216-8290</span>
+            <h4>Phone</h4>
+            <p>+1(786)216-8290</p>
+            <span class="tooltiptext" id="mytooltip1">Click to Copy</span>
           </button>
           <button
             class="tooltip"
             onclick="myFunction(`alain.nunez55@gmail.com`, `mytooltip2`)"
-            onmouseout="outFunc(`mytooltip2`, `alain.nunez55@gmail.com`)"
+            onmouseout="outFunc(`mytooltip2`, `Click to Copy`)"
           >
-            Email
-            <span class="tooltiptext" id="mytooltip2"
-              >alain.nunez55@gmail.com</span
-            >
+            <h4>Email</h4>
+            <p>alain.nunez55@gmail.com</p>
+            <span class="tooltiptext" id="mytooltip2">Click to Copy</span>
           </button>
         </div>
       </section>
       <section id="resume" class="container">
-        <h2 class="title-about">Resume</h2>
+        <h3 class="titles">Resume</h3>
         <p class="text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus at,
           accusantium ab doloremque quidem fugit quam corrupti in, fugiat
@@ -92,7 +113,7 @@
       navigator.clipboard.writeText(copyText);
 
       var tooltip = document.getElementById(tooltipid);
-      tooltip.innerHTML = "Copied: " + copyText;
+      tooltip.innerHTML = "Copied!";
     }
 
     function outFunc(tooltipid, text) {
