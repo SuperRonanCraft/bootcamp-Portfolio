@@ -74,7 +74,7 @@ img {
 }
 
 #profile {
-  background-image: url("/assets/images/tech2.jpg");
+  background-image: url("../images/tech2.jpg");
   background-size: 100% auto;
   padding: 10px;
   text-align: center;
