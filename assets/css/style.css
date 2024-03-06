@@ -63,9 +63,9 @@ p {
 }
 
 img {
-  min-width: 200px;
+  min-width: 250px;
   width: 100%;
-  height: 250px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -75,6 +75,7 @@ img {
 
 #profile {
   background-image: url("/assets/images/tech2.jpg");
+  background-size: 100% auto;
   padding: 10px;
   text-align: center;
 }
@@ -91,6 +92,7 @@ img {
   height: 200px;
   display: block;
   margin-left: auto;
+  padding-top: 10px;
 }
 
 .box-thing {
