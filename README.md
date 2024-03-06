@@ -16,4 +16,4 @@ This is my Portfolio, seems simple for now, but will be advancing as time goes o
 
 ## Screenshot of Webpage
 
-![Screenshot of Webpage](/assets/webpage.png)
+![Screenshot of Webpage](/assets/images/webpage.png)
