@@ -10,12 +10,14 @@ body {
   background: gainsboro;
 }
 
+/* Create variables */
 :root {
   --link-color: white;
   --link-color-hover: black;
   --blue: rgb(90, 112, 160);
 }
 
+/* Heading font sizes */
 h1 {
   font-size: 300%;
 }
@@ -36,6 +38,7 @@ p {
   padding: 20px;
 }
 
+/* Box class containing our Heading and then content*/
 .container {
   margin: 1em;
   display: flex;
@@ -47,6 +50,7 @@ p {
   padding-bottom: 10px;
 }
 
+/* Box container class selector holding only our content*/
 .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +66,7 @@ p {
   display: inline-block;
 }
 
+/* Expand each image to take full width of its containing box*/
 img {
   min-width: 250px;
   width: 100%;
@@ -73,6 +78,7 @@ img {
   border: 3px solid var(--blue);
 }
 
+/* Top profile background image and title*/
 #profile {
   background-image: url("../images/tech2.jpg");
   background-size: 100% auto;
@@ -95,7 +101,8 @@ img {
   padding-top: 10px;
 }
 
-.box-thing {
+/* Text/Title of each work item*/
+.work-item-box {
   background-color: var(--blue);
   text-align: left;
   width: 200px;
@@ -108,7 +115,8 @@ img {
   }
 }
 
-.item {
+/* Items for every work box filling half of available space */
+.work-item {
   flex-grow: 2;
   padding-left: 1em;
   position: relative;
@@ -117,11 +125,13 @@ img {
   flex-basis: 50%;
 }
 
-.item-large {
+/* Larger work item, taking 100% of available space*/
+.work-item-large {
   flex: 0 0 100%;
   padding-left: 1em;
 }
 
+/*Every title like `About Me`, `Work`*/
 .titles {
   flex-grow: 1;
   padding-right: 20px;
@@ -216,11 +226,13 @@ header a:hover {
   margin-right: auto;
 }
 
+/* Footer selector to take 100% of width*/
 footer {
   width: 100%;
   background-color: var(--blue);
 }
 
+/*Media Query to change nav bars flex direction*/
 @media screen and (max-width: 700px) {
   header ul {
     /* border: 4px solid red; */
