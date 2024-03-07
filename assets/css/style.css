@@ -241,4 +241,7 @@ footer {
   header li {
     padding-top: 10px;
   }
+  .titles {
+    text-align: center;
+  }
 }
